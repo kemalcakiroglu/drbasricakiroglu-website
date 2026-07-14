@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1f2937;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply inline-block px-8 py-3 bg-medical-blue text-white rounded-lg font-semibold hover:bg-blue-800 transition-colors;
+}
+
+.btn-secondary {
+  @apply inline-block px-8 py-3 bg-gray-200 text-medical-dark rounded-lg font-semibold hover:bg-gray-300 transition-colors;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold text-medical-dark mb-4;
+}
+
+.section-subtitle {
+  @apply text-xl text-gray-600 mb-12;
+}
